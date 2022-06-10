@@ -1,0 +1,5 @@
+.DS_Sore
+node_modules
+.idea/
+*.log
+
