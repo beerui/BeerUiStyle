@@ -1,11 +1,9 @@
 {
-  "name": "scss",
+  "name": "@brewer/beerui-style",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prod": "npm i && npm run build && rm -rf node_modules/",
     "build": "webpack"
   },
   "keywords": [],
