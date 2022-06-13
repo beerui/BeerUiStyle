@@ -4,6 +4,8 @@
   background: #fff;
   color: #606266;
   &-loading {
+    display: flex;
+    margin-right: 6px;
     animation: rotate360 1s infinite linear;
   }
   &-checkbox {
