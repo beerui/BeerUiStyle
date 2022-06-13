@@ -1,6 +1,7 @@
 const path = require('path');
 // @ts-ignore
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
 	mode: 'development',
@@ -31,8 +32,14 @@ module.exports = {
 			},
 		],
 	},
+    optimization: {
+        minimize: true,
+        minimizer: [
+            new CssMinimizerPlugin(),
+        ],
+    },
 	plugins: [
-		new MiniCssExtractPlugin({
+        new MiniCssExtractPlugin({
 			filename: 'beer.css',
 		}),
 	],
