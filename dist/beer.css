@@ -5321,6 +5321,8 @@ button, input, select, textarea {
   color: #606266;
 }
 .be-tree-loading {
+  display: flex;
+  margin-right: 6px;
   animation: rotate360 1s infinite linear;
 }
 .be-tree-checkbox.indeterminate {

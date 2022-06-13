@@ -1,7 +1,7 @@
 .be-collapse {
   border-top: 1px solid #ebeef5;
   border-bottom: 1px solid #ebeef5;
-  .be-collapse-item__arrow {transform: rotate(-90deg);transition: .2s}
+  .be-collapse-item__arrow {transform: rotate(-90deg);transition: .2s;font-size: 18px;}
   &-item {
     &.is-active {
       .be-collapse-item__arrow {transform: rotate(0deg);}

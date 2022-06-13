@@ -6,12 +6,20 @@
   border-radius: .625rem;
   display:flex;
   align-items: center;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
   p{
     margin: 0;
   }
   &__title {
     font-size:.75rem;
     line-height: 1.125rem;
+    margin-right: 10px;
+    flex: 1;
   }
   &--success{
     background-color: var(--be-success);
