@@ -38,9 +38,16 @@ module.exports = {
             new CssMinimizerPlugin(),
         ],
     },
+    watchOptions: {
+        ignored: /node_modules/,
+        // 监听到变化发生后会等 300ms 再去执行，默认 300ms
+        aggregateTimeout: 300,
+        // 判断文件是否发生变化是通过不停询问系统指定文件有没有变化实现的，默认每秒问 1000 次
+        poll: 10
+    },
 	plugins: [
         new MiniCssExtractPlugin({
-			filename: 'beer.css',
+			filename: '../BeerUi/src/lib/assets/beer.css',
 		}),
 	],
 	devServer: {

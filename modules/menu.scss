@@ -7,6 +7,7 @@
   background-color: #fff;
   transition: .3s;
   user-select: none;
+  .be-icon {display: flex;transition: .3s;}
   &--collapse {
     width: 64px;
     .be-submenu {

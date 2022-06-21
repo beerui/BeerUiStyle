@@ -1,41 +1,74 @@
 .be-alert{
   width: 100%;
-  font-size:.85rem;
-  padding: .5rem;
-  color: #fff;
-  border-radius: .625rem;
-  display:flex;
+  padding: 8px 16px;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  opacity: 1;
+  display: flex;
   align-items: center;
+  transition: opacity .2s;
   &__content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    display: table-cell;
+    padding: 0 8px;
   }
-  p{
-    margin: 0;
+  &__description {
+    font-size: 12px;
+    margin: 5px 0 0;
+  }
+  &.is-light {
+    .be-alert__closebtn {color: #c0c4cc}
+  }
+  &.is-dark {
+    .be-alert__closebtn {color: #ffffff;}
+  }
+  &.is-center {
+    justify-content: center;
+  }
+  &__closebtn {
+    font-size: 12px;
+    opacity: 1;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    cursor: pointer;
+    &.is-customed {
+      font-style: normal;
+      font-size: 13px;
+      top: 9px;
+    }
   }
   &__title {
-    font-size:.75rem;
-    line-height: 1.125rem;
-    margin-right: 10px;
-    flex: 1;
+    font-size: 13px;
+    line-height: 18px;
   }
   &--success{
     background-color: var(--be-success);
-    color: var(--be-text-color-white);
+    color: #ffffff;
     &:hover {background-color: var(--be-success-hover);}
+    .be-alert__description {color: var(--be-text-color-white);}
+    &.is-dark {color: var(--be-text-color-white);}
   }
   &--info{
     background-color: var(--be-info);
+    color: #ffffff;
     &:hover {background-color: var(--be-info-hover);}
+    .be-alert__description {color: var(--be-text-color-white);}
+    &.is-dark {color: var(--be-text-color-white);}
   }
   &--warning{
     background-color: var(--be-warning);
+    color: #ffffff;
     &:hover {background-color: var(--be-warning-hover);}
+    &.is-dark {color: var(--be-text-color-white);}
   }
   &--danger{
     background-color: var(--be-danger);
+    color: #ffffff;
     &:hover {background-color: var(--be-danger-hover);}
+    &.is-dark {color: var(--be-text-color-white);}
   }
 }

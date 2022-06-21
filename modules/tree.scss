@@ -3,6 +3,7 @@
   cursor: default;
   background: #fff;
   color: #606266;
+  .be-icon {display: flex;transition: .3s;}
   &-loading {
     display: flex;
     margin-right: 6px;
