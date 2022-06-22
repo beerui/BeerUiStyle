@@ -47,7 +47,7 @@ module.exports = {
     },
 	plugins: [
         new MiniCssExtractPlugin({
-			filename: '../BeerUi/src/lib/assets/beer.css',
+			filename: 'beer.css',
 		}),
 	],
 	devServer: {

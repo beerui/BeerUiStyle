@@ -31,7 +31,7 @@
         top: 0;
         transition: all .3s;
         &-icon {
-          transform: rotate(0deg);transition: .3s;
+          transform: rotate(0deg);transition: .3s;display: flex;font-size: 14px;
           &.is-reverse {transform: rotate(180deg)}
         }
       }
@@ -43,7 +43,7 @@
       }
       &-close {
         color: #909399;
-        cursor: pointer;
+        cursor: pointer;display: flex;font-size: 14px;
         &:hover {
           color: #424344;
         }

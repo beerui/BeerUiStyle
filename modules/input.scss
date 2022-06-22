@@ -9,14 +9,20 @@
     &::-webkit-input-placeholder {
       color: var(--text-color-placeholder);
     }
-    
+
     &::-moz-placeholder {
       color: var(--text-color-placeholder);
     }
-    
+
     &:-ms-input-placeholder {
       color: var(--text-color-placeholder);
     }
+  }
+
+  &__icon {
+    width: 25px;
+    display: inline-block;
+    line-height: 40px;
   }
 }
 .be-input.is-disabled .be-input__inner {
@@ -67,9 +73,11 @@
     border-color: #409eff;
   }
 }
-
+.be-input--suffix .be-input__inner {
+    padding-right: 30px;
+}
 .be-input__suffix {
-  position: absolute;
+ position: absolute;
   height: 100%;
   right: 5px;
   top: 0;
@@ -95,9 +103,6 @@
   .close {
     display: none;
   }
+
 }
 
-.be-input__icon {
-  width: 25px;
-  line-height: 40px;
-}
